@@ -2,11 +2,15 @@
   float: left;
   width: 100px;
   height: 100px;
-  background: #555;
 }
 
 .page-header h1 {
   position: relative;
   top: 18px;
   left: 10px;
+}
+
+#imagenes_inicio img {
+	width: 250px;
+  	height: 200px;
 }
