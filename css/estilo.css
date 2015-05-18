@@ -14,3 +14,27 @@
 	width: 250px;
   	height: 200px;
 }
+
+#formulario {
+	border-radius: 10%;
+	background-image: url(../imagenes/opcion4.jpg)
+}
+
+#texto {
+	font-size: 16px;
+	text-align : justify;
+}
+
+h2{
+	padding-bottom: 5%;	
+}
+
+#registro_usuario {
+	background-color: white;
+}
+
+form label{
+	font-size: 16px;
+	font-weight: bolder;
+	color: black;
+}
