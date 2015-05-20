@@ -17,7 +17,17 @@
 
 #formulario {
 	border-radius: 10%;
-	background-image: url(../imagenes/opcion4.jpg)
+	background-image: url(../imagenes/opcion2.jpg)
+}
+
+#body_login{
+	background-image: url(../imagenes/op1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#formulario_login {
+	padding-left: 2%;
 }
 
 #texto {
@@ -26,7 +36,8 @@
 }
 
 h2{
-	padding-bottom: 5%;	
+	padding-bottom: 5%;
+	color: black;	
 }
 
 #registro_usuario {
