@@ -26,6 +26,8 @@ $query = "SELECT * FROM usuarios WHERE username = '$username' AND contrasena = '
 $result = mysql_query($query);
 
 if(mysql_num_rows($result) > 0) {
+	$id_usuario = mysql_result($result,0);
+	setcookie("usuario_alquilalo", $id_usuario, time() + 3600);
 	echo 1;
 	
 }

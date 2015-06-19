@@ -19,7 +19,7 @@ $username = $_POST['nombre'];
 $password = $_POST['pass'];
 $email = $_POST['email'];
 
-$sql = "INSERT INTO usuarios (username, email, contrasena) VALUES ('$username', '$password', '$email')";
+$sql = "INSERT INTO usuarios (username, email, contrasena) VALUES ('$username', '$email', '$password')";
 
 if($conn->query($sql) === TRUE){
       echo "Nuevo usuario creado";
