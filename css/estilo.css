@@ -14,7 +14,7 @@
 
 h2{
 	padding-bottom: 5%;
-	color: black;	
+	color: black;
 }
 
 form label{
@@ -29,7 +29,7 @@ form label{
   	height: 200px;
 }
 
-/*registro*/
+/*registro.html*/
 #formulario_registro {
 	border-radius: 10%;
 	background-image: url(../imagenes/opcion2.jpg)
@@ -40,7 +40,7 @@ form label{
 	text-align : justify;
 }
 
-/*login*/
+/*login.html*/
 #body_login{
 	background-image: url(../imagenes/op1.jpg);
 	background-repeat: no-repeat;
@@ -51,9 +51,15 @@ form label{
 	padding-left: 2%;
 }
 
-/*buscar*/
+/*buscar.html*/
 #imagen_buscar img{
 	width: 100%;
-  	height: 100%;
+  height: 100%;
 
+}
+
+/*publicar.html*/
+#img_publicar {
+  width: 100%;
+  height: 70%;
 }
