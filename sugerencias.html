@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link role="link" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link role="link" rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Alquiler de pisos</title>
+
+</head>
+<body>
+	<div class="page-header">
+		<img role="img" src = "imagenes/logo.jpg" alt="logo">
+		<h1 role="heading">Alquílalo</h1>
+	</div>
+
+
+	<nav role="navigation" role="menubar" class="navbar navbar-default">
+  	<div class="navbar-header">
+	  	<button role="button" aria-pressed="false" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+	    </button>
+          	<!--<a href="#" class="navbar-brand">Logotipo</a> -->
+    </div>
+
+  	<div id="navbarCollapse" class="collapse navbar-collapse">
+  		<ul class="nav navbar-nav">
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="anuncios.html">Anuncios</a></li>
+        <li><a href="buscar.html">Buscar</a></li>
+	<li><a href="publicar.html" class="a_publicar">Publicar anuncio</a></li>
+        <li><a href="perfil.html" class="a_perfil">Perfil</a></li>
+       	<li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+        <li class="active"><a href="#">Sugerencias</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      	<li class="barra_login"></li>
+      </ul>
+  	</div>
+	</nav>
+
+  <ol class="breadcrumb">
+    <li><a href="home.html">Inicio</a></li>
+    <li class="active">Sugerencias</li>
+  </ol>
+
+  <div class="row">
+    <div class="col-lg-5" id="imagen_buscar">
+      <img role="img" src="imagenes/preguntas.jpg" alt="">
+    </div>
+
+    <div class = "col-lg-5" id="formulario_buscar">
+      <div class="col-md-offset-1" id="titulo">
+        <h2 role="heading">Sugerencias</h2>
+      </div>
+      <div class="col-md-offset-1" id="texto">
+        <p> Si has encontrado algún error en la página o simplemente se te ocurre alguna idea para mejorar nuestra web, puedes compartirla rellenando el campo de texto que tienes a continuación y dándole a enviar. Agradecemos cualquier aportación y sentimos si por algún tipo de error no has podido sacarle todo el partido a nuestra página.</p>
+      </div>
+
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label class="col-lg-4 control-label">Recomendación</label>
+          <div class="col-lg-6">
+            <textarea class="form-control" id="informacion" name="informacion" rows="5" placeholder="Escribe aquí..."></textarea><span id="msg1" class="destacado"><span id="msg1" class="destacado">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-lg-offset-4 col-lg-10">
+            <button role="button" aria-pressed="false" type="submit" class="btn btn-primary" id="btn_enviar">Enviar</button>
+          </div>
+        </div>
+    </form>
+	</div>
+</div>
+
+<hr>
+       <footer class="footer">
+          <div class="col-md-offset-4">
+            <p class="text-muted">Para más información contacte al e-mail alquila@ejemplo.com</p>
+          </div>
+        </footer> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="script/sugerencia.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="script/comprobar.js"></script>
+    <script src="script/comprobar_logueado.js"></script>
+    <script src="script/comprobar_publicar.js"></script>
+  </body>
+</html>

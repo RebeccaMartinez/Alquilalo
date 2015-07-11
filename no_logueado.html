@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <link role="link" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link role="link" rel="stylesheet" type="text/css" href="css/estilo.css">
+        <title>Alquiler de pisos</title>
+
+</head>
+<body>
+        <div class="page-header">
+                <img role="img" src = "imagenes/logo.jpg" alt="logo">
+                <h1 role="heading">Alquílalo</h1>
+        </div>
+
+        <nav role="navigation" class="navbar navbar-default">
+        <div class="navbar-header">
+        <button role="button" type="button" aria-pressed="false" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+                <!--<a href="#" class="navbar-brand">Logotipo</a> -->
+                </div>
+
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="anuncios.html">Anuncios</a></li>
+        <li><a href="buscar.html">Buscar</a></li>
+	<li><a href="publicar.html" class="a_publicar">Publicar Anuncio</a></li>
+        <li><a href="perfil.html" class="a_perfil">Perfil</a></li>
+        <li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+        <li><a href="sugerencias.html">Sugerencias</a></li>
+        </ul>
+       
+        </div>
+        </nav>
+
+	<div class="row">
+		<div class="col-md-offset-4">
+			<p> Tienes que iniciar sesión para poder acceder a su perfil</p>
+			<button role="button" aria-pressed="false" class="btn btn-primary" id="btn_no_logueado"><a href="login.html">Inciar sesion</a></button>
+			<p>¿No estás registrado?¿A qué esperas?</p>
+			<button role="button" aria-pressed="false" class="btn btn-primary"><a href="registro.html">Registrarse</a></button>
+			
+		</div>
+	</div>
+
+	<footer class="footer">
+          <div class="col-md-offset-4" id="footer_no_logueado">
+            <p class="text-muted">Para más información contacte al e-mail alquila@ejemplo.com</p>
+          </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="script/buscar.js"></script>
+	<script src="script/comprobar_publicar.js"></script>
+	<script src="script/comprobar.js"></script>
+
+</body>
+</html>
+

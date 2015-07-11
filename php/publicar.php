@@ -3,8 +3,8 @@ $servername = "localhost";
 $username = "alu4555";
 $password = "1dr9Ku";
 $dbname = "alu4555";
-$tamImg = $_FILES[imagen][size];
 
+$tamImg = $_FILES[imagen][size];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -31,7 +31,7 @@ if($tamImg != 0){
   }
 
   if ($_FILES['imagen']['type'] == "image/jpeg"){
-    echo "foto valida";
+    $msg=$msg."Foto valida";
   } 
   else {
     $msg=$msg."El achivo tiene que ser JPG";
@@ -39,17 +39,18 @@ if($tamImg != 0){
   }
 
   $file_name=$_FILES[imagen][name];
-  echo $file_name;
+  
+  //add es la ruta desde aqui, mientras que ruta es la ruta que tendra la imagen cuando se llame desde los ficheros html y es la que se guardara en la bd
   $add = "../imagenesUsuarios/$file_name";
+  $ruta = "imagenesUsuarios/$file_name";
   if($fichero=="true"){
 
     if(move_uploaded_file($_FILES['imagen']['tmp_name'], $add)){
-      echo "Se ha subido la foto";
     
-      $sql = "INSERT INTO anuncios (username, titulo, contacto, descripcion,ruta, precio, lugar) VALUES ('$username', '$titulo', '$contacto', '$desc', '$add', '$precio', '$lugar')";
+      $sql = "INSERT INTO anuncios (username, titulo, contacto, descripcion,ruta, precio, lugar) VALUES ('$username', '$titulo', '$contacto', '$desc', '$ruta', '$precio', '$lugar')";
     
       if($conn->query($sql) === TRUE){
-         echo "Anuncio publicado";
+         echo "true";
       }
       else {
          echo "Error:" .$sql . "<br>" . $conn->error;
@@ -59,7 +60,7 @@ if($tamImg != 0){
 
     }
     else {
-      echo "error al guardar la foto";
+      echo "false";
     }
   }
   else{
@@ -73,7 +74,7 @@ else{
    $sql = "INSERT INTO anuncios (username, titulo, contacto, descripcion, precio, lugar) VALUES ('$username', '$titulo', '$contacto', '$desc', '$precio', '$lugar')";
     
    if($conn->query($sql) === TRUE){
-      echo "Anuncio publicado";
+      echo "true";
    }
    else {
       echo "Error:" .$sql . "<br>" . $conn->error;

@@ -1,18 +1,21 @@
+<!DOCTYPE html>
 <html lang = "es">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link role="link" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link role="link" rel="stylesheet" type="text/css" href="css/estilo.css">
 	<title>Alquiler de pisos</title>
-	<div class="page-header">
-		<img src = "imagenes/logo.jpg">
-		<h1>Alquílalo</h1>
-	</div>
+
 </head>
 <body>
+	<div class="page-header">
+		<img role="img" src = "imagenes/logo.jpg" alt="logo">
+		<h1 role="heading">Alquílalo</h1>
+	</div>
+
 	<nav role="navigation" class="navbar navbar-default">
   	<div class="navbar-header">
-    	<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+    	<button role="button" aria-pressed="false" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -22,14 +25,16 @@
 
   	<div id="navbarCollapse" class="collapse navbar-collapse">
 	    <ul class="nav navbar-nav">
-        <li ><a href="home.html">Inicio</a></li>
-        <li><a href="#">Anuncios</a></li>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="anuncios.html">Anuncios</a></li>
         <li><a href="buscar.html">Buscar</a></li>
+	<li class="active"><a href="#" class="a_publicar">Publicar anuncio</a></li>
         <li><a href="perfil.html">Perfil</a></li>
        	<li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+        <li><a href="sugerencias.html">Sugerencias</a></li>
     	</ul>
     	<ul class="nav navbar-nav navbar-right">
-    		<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Loguearse</a></li>
+   
     	</ul>
   	</div>
 	</nav>
@@ -46,35 +51,35 @@
     <div class="col-lg-5" id="formulario_publicar">
 
 			<div class="col-md-offset-5">
-				<h2>Publica tu anuncio</h2>
+				<h2 role="heading">Publica tu anuncio</h2>
 			</div>
 
       <form class="form-horizontal" id="formPublicar" role="form" method="POST" enctype="multipart/form-data">
           <div class="form-group">
             <label class="col-lg-4 control-label">Título</label>
             <div class="col-lg-7">
-              <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Título del anuncio">
+              <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Título del anuncio"><span id="msg1" class="destacado"></span>
             </div>
           </div>
 
           <div class="form-group">
-            <label class="col-lg-4 control-label">Precio</label>
+            <label class="col-lg-4 control-label">Precio en euros</label>
             <div class="col-lg-7">
-              <input type="text" id="precio" name="precio" class="form-control" placeholder="Precio">
+              <input type="text" id="precio" name="precio" class="form-control" placeholder="Precio"><span id="msg2" class="destacado"></span>
             </div>
           </div>
 
           <div class="form-group">
             <label class="col-lg-4 control-label">Lugar</label>
             <div class="col-lg-7">
-              <input type="text" id="lugar" name="lugar" class="form-control" placeholder="Lugar de la vivienda">
+              <input type="text" id="lugar" name="lugar" class="form-control" placeholder="Lugar de la vivienda"><span id="msg3" class="destacado"></span>
             </div>
           </div>
 
 					<div class="form-group">
             <label class="col-lg-4 control-label">Contacto</label>
             <div class="col-lg-7">
-              <input type="text" id="contacto" name="contacto" class="form-control" placeholder="Informacion de contacto (Emal/Telefono...)">
+              <input type="text" id="contacto" name="contacto" class="form-control" placeholder="Informacion de contacto (Emal/Telefono...)"><span id="msg4" class="destacado"></span>
             </div>
           </div>
 
@@ -93,22 +98,31 @@
 							<!--</span>-->
 						</div>
 					</div>
-
+	  <div class="col-lg-7 col-lg-offset-4"><span id="msg5" class="error_p"></span>
+		
+	  </div>
           <div class="form-group">
             <div class="col-lg-offset-4 col-lg-10">
-              <button type="submit" id="boton_publicar" name="boton_publicar" class="btn btn-primary">Publicar</button>
+              <button role="button" aria-pressed="false" type="button" id="boton_publicar" name="boton_publicar" class="btn btn-primary">Publicar</button>
             </div>
           </div>
       </form>
     </div>
 		<div class="col-lg-5">
-			<img id="img_publicar"src="imagenes/publicar.jpg">
+			<img role="img" id="img_publicar" src="imagenes/publicar.jpg" alt="">
 		</div>
   </div>
+  <hr>
+  <footer class="footer">
+        <div class="col-md-offset-4">
+          <p class="text-muted">Para más información contacte al e-mail alquila@ejemplo.com</p>
+        </div>
+    </footer>
 
 <!--	<script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="script/publicar.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
 </body>
 </html>

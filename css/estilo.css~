@@ -24,40 +24,24 @@ form label{
 	color: black;
 }
 
-.destacado{
-	color: red;
+#footer_buscar {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 0px;
+	
+	
 }
 
-.exito{
-	color: green;
+/*Página de inicio*/
+#imagenes_inicio img {
+	width: 250px;
+  	height: 200px;
 }
-
-button a {
-	color: white;
-}
-
-
-.error_p{
-	color:red;
-	padding-bottom:2%;
-	font-weight: bold;
-}
-
-.bien_p {
-
-	color: green;
-	font-weight: bold;
-}
-
-
 
 /*registro*/
 #formulario_registro {
 	border-radius: 10%;
-}
-
-#btn_registro{
-	margin-top: 5%;
 }
 
 #texto {
@@ -76,26 +60,11 @@ button a {
 	padding-left: 2%;
 }
 
-
-
 /*buscar*/
 #imagen_buscar img{
 	width: 100%;
   	height: 100%;
 
-}
-
-#resultado_buscar img {
-	width: 30%;
-	max-height: 300px;
-	padding-bottom: 4%;
-}
-
-#footer_buscar{
-	position: absolute;
-	bottom: 10px;
-	padding-top: 25px;
-	
 }
 
 /*anuncios*/
@@ -122,25 +91,4 @@ button a {
 	width: 30%;
 	max-height: 300px;
 	padding-bottom: 4%;
-}
-
-/*publicar*/
-
-#img_publicar {
-	margin-top: 13%;
-	margin-left: 15%;
-	width: 50%;
-	height: 50%;
-}
-
-#boton_publicar{
-	margin-top: 5%;
-}
-/*no_logueado*/
-#btn_no_logueado {
-	margin-bottom: 2%;
-}
-
-#footer_no_logueado{
-	padding-top: 18%;
 }

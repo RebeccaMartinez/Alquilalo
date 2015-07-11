@@ -1,63 +1,105 @@
 <!DOCTYPE html>
 
 <html lang = "es">
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<title>Alquiler de pisos</title>
-	<div class="page-header">
-		<img src = "imagenes/logo.jpg" />
-		<h1>Alquílalo</h1>
-	</div>
-</head>
-<body>
-	<nav role="navigation" class="navbar navbar-default">
-  	<div class="navbar-header">
-	  	<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-	    </button>
-      	<!--<a href="#" class="navbar-brand">Logotipo</a> -->
-  	</div>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link role="link" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link role="link" rel="stylesheet" type="text/css" href="css/estilo.css">
+		<title>Alquiler de pisos</title>
 
-  	<div id="navbarCollapse" class="collapse navbar-collapse">
-	    <ul class="nav navbar-nav">
-        <li><a href="home.html">Inicio</a></li></span>
-        <li><a href="#">Anuncios</a></li>
-        <li><a href="buscar.html">Buscar</a></li>
-        <li><a href="perfil.html">Perfil</a></li>
-       	<li class="active"><a href="#">Preguntas Frecuentes</a></li>
-    	</ul>
-    	<ul class="nav navbar-nav navbar-right">
-    		<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Loguearse</a></li>
-    	</ul>
-  	</div>
-	</nav>
+	</head>
+	<body>
+		<div class="page-header">
+			<img role="img" src = "imagenes/logo.jpg" alt="logo" >
+			<h1 role="heading">Alquílalo</h1>
+		</div>
 
-	<ol class="breadcrumb">
-		<li><a href="home.html">Inicio</a></li>
-		<li class="active">Preguntas Frecuentes</li>
-	</ol>
+		<nav role="navigation" class="navbar navbar-default">
+		  	<div class="navbar-header">
+			  	<button role="button" aria-pressed="false" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+			    </button>
+		      	<!--<a href="#" class="navbar-brand">Logotipo</a> -->
+		  	</div>
 
-	<div class="col-md-2 column margintop20">
-		<ul class="nav nav-pills nav-stacked">
-		  <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Home</a></li>
-		  <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Option 1</a></li>
-		  <li><a href="#" class="active2"><span class="glyphicon glyphicon-chevron-right"></span> Option 2</a></li>
-		  <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Option 3</a></li>
-		  <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Option 4</a></li>
-		  <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> Option 5</a></li>
-		</ul>
-	</div>
-	<div class="col-md-8 column margintop20">
-		
-	</div>
+		  	<div id="navbarCollapse" class="collapse navbar-collapse">
+			    <ul class="nav navbar-nav">
+		        <li><a href="home.html">Inicio</a></li></span>
+		        <li><a href="anuncios.html">Anuncios</a></li>
+		        <li><a href="buscar.html">Buscar</a></li>
+			<li><a href="perfil.html" class="a_publicar">Publicar anuncio</a></li>
+		        <li><a href="perfil.html" class="a_perfil">Perfil</a></li>
+		       	<li class="active"><a href="#">Preguntas Frecuentes</a></li>
+		       	<li><a href="sugerencias.html">Sugerencias</a></li>
+		    	</ul>
+		    	<ul class="nav navbar-nav navbar-right">
+		    		<li class="barra_login"></li>
+		    	</ul>
+		  	</div>
+		</nav>
 
+		<ol class="breadcrumb">
+			<li><a href="home.html">Inicio</a></li>
+			<li class="active">Preguntas Frecuentes</li>
+		</ol>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-</body>
+	<div class="row">
+		<div class="col-md-2">
+			<ul class="nav nav-pills nav-stacked">
+			  <li><a href="#p1"><span class="glyphicon glyphicon-chevron-right"></span> Registro y Ver Anuncios</a></li>
+			  <li><a href="#p2"><span class="glyphicon glyphicon-chevron-right"></span> Registro y Publicar Anuncios</a></li>
+			  <li><a href="#p3"><span class="glyphicon glyphicon-chevron-right"></span> Ver Anuncios </a></li>
+			  <li><a href="#p4"><span class="glyphicon glyphicon-chevron-right"></span> Información de Perfil</a></li>
+			  <li><a href="#p5"><span class="glyphicon glyphicon-chevron-right"></span> Mis Anuncios</a></li>
+			  <li><a href="#p6"><span class="glyphicon glyphicon-chevron-right"></span> ¿Cuánto cuesta poner un anuncio?</a></li>
+			  <li><a href="#p7"><span class="glyphicon glyphicon-chevron-right"></span> Errores/Sugerencias</a></li>
+			</ul>
+		</div>
+		<div class="col-md-7 col-md-offset-1">
+			<a name = "p1"> </a>
+			<h2 role="heading"> 1.- ¿Debo estar registrado/a para poder ver anuncios? </h2>
+			<p> No, para poder ver los anuncios no deberás registrarte. Podrás ver los anuncios y la información de contacto del anunciante estes o no registrado.</p>
+			<hr>
+			<a name = "p2"> </a>
+			<h2 role="heading"> 2.- ¿Debo estar registrado/a para poder publicar anuncios? </h2>
+			<p> Sí, será necesario registrarse para publicar un anuncio. </p>
+			<hr>
+			<a name = "p3"> </a>
+			<h2 role="heading"> 3.- ¿Cómo puedo ver los anuncios de la página? </h2>
+			<p> En la sección "Anuncios" encontrarás todos los anuncios de nuestra página. Si sabes mas o menos lo que estás buscando puedes dirigirte a la sección "Buscar" en el que rellenarás un formulario con los datos básicos sobre el piso que estás buscando, ya sea la zona, el precio o el número de habitaciones que tendrá el piso, de esta manera aparecerá en pantalla todos los pisos que cumplan dichas características. </p>
+			<hr>
+			<a name = "p4"> </a>
+			<h2 role="heading"> 4.- ¿Quién pude ver la información de mi perfil? </h2>
+			<p> Nadie. No se puede acceder a los perfiles de otros usuarios ya que en esta web lo importante son los anuncios no las personas que los publican.</p>
+			<hr>
+			<a name = "p5"> </a>
+			<h2 role="heading"> 5.- ¿Cómo sé que mi anuncio es visible para otros usuarios? </h2>
+			<p> Tu anuncio se podrá ver en la sección de "Anuncios" nada más haberlo publicado. En tu perfil también podrás ver los anuncios que has publicado. </p>
+			<hr>
+			<a name = "p6"> </a>
+			<h2 role="heading"> 6.- ¿Cuánto cuesta poner un anuncio? </h2>
+			<p> Todos los anuncios que publiques aparecerán en nuestra página de manera gratuita y serán visibles para todo el mundo. </p>
+			<hr>
+			<a name = "p7"> </a>
+			<h2 role="heading"> 7.- ¿Errores en la página? </h2>
+			<p> Si ves algún error o simplemente quieres aportar ideas sobre cómo podríamos mejorar, estamos abiertos a cuelquier sugerencia. Entra en el apartado de "Sugerencias" e infórmanos de lo que ocurre.</p>
+
+		</div>
+ 	</div>
+			<hr>
+		<footer class="footer">
+	        <div class="col-md-offset-4">
+	          <p class="text-muted">Para más información contacte al e-mail alquila@ejemplo.com</p>
+	        </div>
+	    </footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="script/comprobar.js"></script>
+		<script src="script/comprobar_logueado.js"></script>
+		<script src="script/comprobar_publicar.js"></script>
+	</body>
 </html>

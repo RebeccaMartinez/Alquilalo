@@ -22,8 +22,6 @@ $email = $_POST['email'];
 
 $sql = "INSERT INTO usuarios (username, email, contrasena) VALUES ('$username', '$email', '$password')";
 
-setcookie("usuario_alquilalo", $username, time() + 3600);
-
 if($conn->query($sql) === TRUE){
       echo 1;
 } 

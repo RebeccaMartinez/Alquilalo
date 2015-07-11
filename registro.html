@@ -3,18 +3,19 @@
 <html lang = "es">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link role="link" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link role="link" rel="stylesheet" type="text/css" href="css/estilo.css">
 	<title>Alquiler de pisos</title>
-	<div class="page-header">
-		<img src = "imagenes/logo.jpg">
-		<h1>Alquílalo</h1>
-	</div>
 </head>
 <body>
+	<div class="page-header">
+		<img role="img" src = "imagenes/logo.jpg" alt=""/>
+		<h1 role="heading">Alquílalo</h1>
+	</div>
+
 	<nav role="navigation" class="navbar navbar-default">
   	<div class="navbar-header">
-    	<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+    	<button role="button" aria-pressed="false" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -26,13 +27,15 @@
 		<div id="navbarCollapse" class="collapse navbar-collapse">
 	    <ul class="nav navbar-nav">
         <li><a href="home.html">Inicio</a></li>
-        <li><a href="#">Anuncios</a></li>
+        <li><a href="anuncios.html">Anuncios</a></li>
         <li><a href="buscar.html">Buscar</a></li>
-        <li><a href="perfil.html">Perfil</a></li>
+	<li><a href="publicar.html" class="a_publicar">Publicar anuncio</a></li>
+        <li><a href="perfil.html" class="a_perfil">Perfil</a></li>
        	<li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+        <li><a href="sugerencias.html">Sugerencias</a></li>
     	</ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Loguearse</a></li>
+        <li class="barra_login"></li>
       </ul>
 		</div>
 	</nav>
@@ -48,41 +51,45 @@
     <div class="col-lg-5" id="formulario_registro">
 
       <div class="col-md-offset-4">
-        <h2>Únete a la web</h2>
+        <h2 role="heading">Únete a la web</h2>
       </div>
 
-      <form class="form-horizontal" role="form" action="php/registro.php" method="POST">
+      <form class="form-horizontal" role="form"  method="POST">
           <div class="form-group">
             <label class="col-lg-4 control-label" id="registo_usuario">Nombre de Usuario</label>
             <div class="col-lg-7">
-              <input type="text" name="nombre" class="form-control" placeholder="Nombre de Usuario">
+              <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre de Usuario"><span id="msg1" class="destacado"></span>
             </div>
 					</div>
 
         	<div class="form-group">
             <label class="col-lg-4 control-label">Contraseña</label>
             <div class="col-lg-7">
-              <input type="password" name="pass" class="form-control" placeholder="Contraseña">
+              <input type="password" name="pass" id="pass" class="form-control" placeholder="Contraseña"><span id="msg2" class="destacado"></span>
             </div>
           </div>
 
           <div class="form-group">
             <label class="col-lg-4 control-label">Repita la Contraseña</label>
             <div class="col-lg-7">
-              <input type="password" class="form-control" placeholder="Repita la Contraseña">
+              <input type="password" class="form-control" id="pass2" placeholder="Repita la Contraseña"><span id="msg3" class="destacado"></span>
             </div>
           </div>
 
           <div class="form-group">
             <label class="col-lg-4 control-label" id="registro_email">Email</label>
             <div class="col-lg-7">
-              <input type="email" name="email" class="form-control" placeholder="Email">
+              <input type="email" name="email" id="email" class="form-control" placeholder="Email"><span id="msg4" class="destacado"></span>
             </div>
           </div>
 
+	<div class="col-lg-7 col-lg-offset-4"><span id="msg5" class="error_p"></span>
+
+	</div>
+
           <div class="form-group">
             <div class="col-lg-offset-4 col-lg-10">
-              <button type="submit" class="btn btn-primary">Registrarse</button>
+              <button role="button" aria-pressed="false" type="button" class="btn btn-primary" id="btn_registro">Registrarse</button>
             </div>
           </div>
       </form>
@@ -90,20 +97,27 @@
 
     <div class="col-lg-5" id="texto_registro">
       <div class="col-md-offset-1" id="titulo">
-        <h2>¿Qué ventajas tiene registrarse?</h2>
+        <h2 role="heading">¿Qué ventajas tiene registrarse?</h2>
       </div>
       <div class="col-md-offset-1" id="texto">
-        <p>Esta página fue pensada con la idea de que los usuarios que deseen usar la página se registren en ella, y aunque cualquiera que no esté regirtrado puede entrar en ella y ver los anuncios, las personas registradas tienen ciertas ventajas sobre las que no lo están. Las ventajas son las siguientes:</p>
-        <ul>
-          <li>Podrás publicar anuncios</li>
-          <li>Podrás ver los perfiles de otros usuarios</li>
-          <li>Poner más cosas</li>
-        </ul>
+        <p>Esta página fue pensada con la idea de que los usuarios que deseen usar la página se registren en ella, y aunque cualquiera que no esté registrado puede entrar en ella y ver los anuncios, solo las personas registradas podrán publicar anuncios. El número de anuncios que se pueden publicar es ilimitado.</p>
+	<p>¿A qué esperas para unirte?</p>
+    
       </div>
     </div>
   </div>
+  <hr>
+  <footer class="footer">
+        <div class="col-md-offset-4">
+          <p class="text-muted">Para más información contacte al e-mail alquila@ejemplo.com</p>
+        </div>
+    </footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="script/registro.js"></script>
+	<script src="script/comprobar.js"></script>
+	<script src="script/comprobar_login"></script>
+	<script src="script/comprobar_publicar.js"></script>
 </body>
 </html>
